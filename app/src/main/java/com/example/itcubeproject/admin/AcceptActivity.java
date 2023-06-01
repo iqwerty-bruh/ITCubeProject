@@ -13,7 +13,6 @@ import com.example.itcubeproject.R;
 
 public class AcceptActivity extends AppCompatActivity {
     Animation buttonAnim;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
