@@ -25,7 +25,6 @@ public class MainAdminActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_admin);
         Button button1 = (Button) findViewById(R.id.acceptButton);
         buttonAnim = AnimationUtils.loadAnimation(this,R.anim.buttonanim);
-        Button button2 = (Button) (findViewById(R.id.managementButton));
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 button1.startAnimation(buttonAnim);
@@ -33,13 +32,5 @@ public class MainAdminActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        button2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                button2.startAnimation(buttonAnim);
-                Intent intent = new Intent(MainAdminActivity.this, GroupsActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }

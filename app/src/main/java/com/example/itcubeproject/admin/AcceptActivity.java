@@ -3,6 +3,7 @@ package com.example.itcubeproject.admin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -23,7 +24,9 @@ public class AcceptActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 acceptButton.startAnimation(buttonAnim);
-                //навали жестко тут базы
+                //тут твоя база
+                Intent intent = new Intent(AcceptActivity.this,AcceptedActivity.class);
+                startActivity(intent);
             }
         });
     }
