@@ -19,8 +19,7 @@ import com.example.itcubeproject.R;
 
 public class RequestActivity extends AppCompatActivity {
     Animation buttonAnim;
-    AutoCompleteTextView mAutoCompleteTextView;
-    final String[] napravleniya = { "pes", "pes", "яненавижуандроидстудию", "трахалмамусоздателяджавы"};
+    final String[] napravleniya = { "стать питонистом", "стать калоедом", "стать джедаем", "стать долбоебом", "стать джава-разработчиком"};
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +34,8 @@ public class RequestActivity extends AppCompatActivity {
         EditText editText7 = (EditText) findViewById(R.id.editText7);
         EditText editText8 = (EditText) findViewById(R.id.editText8);
 
-        mAutoCompleteTextView = findViewById(R.id.editText4);
-        mAutoCompleteTextView.setAdapter(new ArrayAdapter<>(this,
+        Spinner spinner = findViewById(R.id.editText4);
+        spinner.setAdapter(new ArrayAdapter<>(this,
                 R.layout.autocompletelayout,R.id.autoTextView, napravleniya));
 
         buttonAnim = AnimationUtils.loadAnimation(this,R.anim.buttonanim);
